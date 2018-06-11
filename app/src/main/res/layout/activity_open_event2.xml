@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".openEvent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_back"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text=" 제목"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/category2"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/ic_menu"
+                android:text="  카테고리"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/content2"
+                android:layout_width="292dp"
+                android:layout_height="282dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:background="@android:color/white"
+                android:text="TextView"
+                android:textAlignment="viewStart" />
+
+
+            <TextView
+                android:id="@+id/add2"
+                android:drawableLeft="@drawable/ic_arrow_address"
+                android:drawablePadding="10dp"
+                android:paddingLeft="5dp"
+                android:layout_width="292dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:text="주소"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tel2"
+                android:drawableLeft="@drawable/ic_talking_by_phone_auricular_symbol_with_speech_bubble"
+                android:drawablePadding="10dp"
+                android:paddingLeft="5dp"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:inputType="phone"
+                android:text="전화번호"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/amount2"
+                android:layout_width="292dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:text="인원   명"
+                android:textAlignment="center"
+                android:textColor="?android:attr/colorFocusedHighlight"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="132dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="click"
+                android:text="찜하기" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
